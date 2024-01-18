@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<style>
+    #head,#h2{
+        padding: 1% 0 1% 1%;
+        background-color: rgb(128, 210, 211);
+    }
+    #h2 span{
+      padding-left: 10%;
+        font-weight: 900;
+
+    }
+    .card{
+       
+        margin: 5% 0 5% 0;
+        align-items: center;
+    }
+    .card img{  
+        width:40%;
+        height:170px;
+    }
+    #pri{
+      font-size: larger;
+      font-weight: bolder;
+    }
+    .card-title{
+      font-weight: bolder;
+   
+    }
+    #adc,#buy{
+      font-weight: bold;
+    }
+    th{
+      text-align: center;
+      padding-left: 50px;
+    }
+    td{
+  text-align: center;
+  padding-top: 20px;
+  padding-left: 60px;
+    }
+    
+    #table2 td{
+      font-weight:bolder;
+    }
+#main{
+      background-color: rgb(216, 213, 213);
+      background-size: cover;
+    }
+</style>
+</head>
+<body>
+    <div id="head">
+    <div class="row">
+        <div class="col-2">
+          <img src="cart.png" width="70px">
+        </div>
+        <div class="col-10" id="h2">
+          <span>HOME</span>
+          <span>CATEGORIES</span>
+          <span>NOTIFICATION</span>
+          <span>CART</span>
+        </div>
+    </div>
+    </div>
+
+    <div id="main">
+        <div class="container text-center">
+            <div class="row row-cols-4">
+              <div class="col">
+                <div class="card">
+                    <div class="card-title ">
+                      <span id="c1"> G-Shock G1280</span>
+                    </div>
+                    <img src="w1.png">
+                    <div class="card-body">    
+                                       
+                       <span>&#x20B9;</span> <span id="pri1"> 9999</span><br>
+                        <button id="minus1">-</button>
+                        <input style="width: 30px;" type="text" id="count1" value="1">
+                        <button type="button" id="add1">+</button><br>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" id="adc1" class="btn btn-warning" style="width: 100%; font-size:12px;padding:3% 0% 3% 0%; margin-top: 2%;">ADD TO CART</button>
+                     
+                    </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card">
+                    <div class="card-title">
+                      <span id="c2" >G-Shock G1143</span>
+                    </div>
+                    <img src="w2.png">
+                    <div class="card-body">
+                    <span>&#x20B9;</span> <span id="pri2"> 17999</span><br>
+                     <button id="minus2">-</button>
+                     <input style="width: 30px;" type="text" id="count2" value="1">
+                     <button type="button" id="add2">+</button><br>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" id="adc2" class="btn btn-warning" style="width: 100%; font-size:12px;padding:3% 0% 3% 0%; margin-top: 2%;">ADD TO CART</button>
+                     
+                    </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card">
+                    <div class="card-title">
+                     <span id="c3"> G-Shock G1390</span>
+                    </div>
+                    <img src="w3.png">
+                    <div class="card-body">
+                    <span>&#x20B9;</span> <span id="pri3"> 12999</span><br>
+                     <button id="minus3">-</button>
+                     <input style="width: 30px;" type="text" id="count3" value="1">
+                     <button type="button" id="add3">+</button><br>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" id="adc3" class="btn btn-warning" style="width: 100%; font-size:12px;padding:3% 0% 3% 0%; margin-top: 2%;">ADD TO CART</button>
+                     
+                    </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card">
+                    <div class="card-title">
+                       <span id="c4">NOISE EVOLVE</span>
+                    </div>
+                    <img src="w4.png">
+                    <div class="card-body">
+                    <span>&#x20B9;</span> <span id="pri4"> 2800</span><br>
+                     <button id="minus4">-</button>
+                     <input style="width: 30px;" type="text" id="count4" value="1">
+                     <button type="button" id="add4">+</button><br>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" id="adc4" class="btn btn-warning" style="width: 100%; font-size:12px;padding:3% 0% 3% 0%; margin-top: 2%;">ADD TO CART</button>
+                     
+                    </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card">
+                    <div class="card-title">
+                      <span id="c5"> AMBRANE CRUST PRO</span>
+                    </div>
+                    <img src="w5.png">
+                    <div class="card-body">
+                    <span>&#x20B9;</span> <span id="pri5"> 3000</span><br>
+                     <button id="minus5">-</button>
+                     <input style="width: 30px;" type="text" id="count5" value="1">
+                     <button type="button" id="add5">+</button><br>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" id="adc5" class="btn btn-warning" style="width: 100%; font-size:12px;padding:3% 0% 3% 0%; margin-top: 2%;">ADD TO CART</button>
+                     
+                    </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card">
+                    <div class="card-title">
+                      <span id="c6"> FITBIT SENSE 2</span>
+                    </div>
+                    <img src="w6.png">
+                    <div class="card-body">
+                    <span>&#x20B9;</span> <span id="pri6"> 24620</span><br>
+                     <button id="minus6">-</button>
+                     <input style="width: 30px;" type="text" id="count6" value="1">
+                     <button type="button" id="add6">+</button><br>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" id="adc6" class="btn btn-warning" style="width: 100%; font-size:12px;padding:3% 0% 3% 0%; margin-top: 2%;">ADD TO CART</button>
+                     
+                    </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card">
+                    <div class="card-title">
+                     <span id="c7"> APPLE WATCH ULTRA</span>
+                    </div>
+                    <img src="w7.png">
+                    <div class="card-body">
+                     <span>&#x20B9;</span> <span id="pri7"> 82999</span><br>
+                      <button id="minus7">-</button>
+                      <input style="width: 30px;" type="text" id="count7" value="1">
+                      <button type="button" id="add7">+</button><br>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" id="adc7" class="btn btn-warning" style="width: 100%; font-size:12px;padding:3% 0% 3% 0%; margin-top: 2%;">ADD TO CART</button>
+                     
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">ADDED TO CART</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+    
+      <div class="modal-footer">
+       
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" id="shwitem" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#itemslist">Show Items</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="modal fade" id="itemslist" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">SELECTED ITEM</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <table id="table" cellspadding="15">
+          <tr>
+              <th>ITEM</th>
+              <th>COUNT</th>
+              <th>PRICE</th>
+          </tr>     
+        
+           </table>
+
+           <table id="table2" cellspadding="15">
+
+           </table>
+<span id="item1"></span>&nbsp;&nbsp;
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">BUY NOW</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  $(document).ready(function(){
+   var items=[];
+
+        $("#adc1").click(function(){
+      var it=$("#c1").html();
+      var pri=$("#pri1").html();
+      var cnt=$("#count1").val();
+       items.push({item:it,
+                price:pri,
+                count:cnt
+                });
+               
+    });
+
+     $("#adc2").click(function(){
+      var it=$("#c2").html();
+      var pri=$("#pri2").html();
+      var cnt=$("#count2").val();
+       items.push({item:it,
+                price:pri,
+                count:cnt
+                });
+
+    });
+
+     $("#adc3").click(function(){
+      var it=$("#c3").html();
+      var pri=$("#pri3").html();
+      var cnt=$("#count3").val();
+     items.push({item:it,
+                price:pri,
+                count:cnt
+                });
+
+    });
+
+     $("#adc4").click(function(){
+      var it=$("#c4").html();
+      var pri=$("#pri4").html();
+      var cnt=$("#count4").val();
+      items.push({item:it,
+                price:pri,
+                count:cnt
+                });
+    });
+
+     $("#adc5").click(function(){
+      var it=$("#c5").html();
+      var pri=$("#pri5").html();
+      var cnt=$("#count5").val();
+    items.push({item:it,
+                price:pri,
+                count:cnt
+                });
+    });
+
+     $("#adc6").click(function(){
+      var it=$("#c6").html();
+      var pri=$("#pri6").html();
+      var cnt=$("#count6").val();
+      items.push({item:it,
+                price:pri,
+                count:cnt
+                });
+    
+    });
+
+     $("#adc7").click(function(){
+      var it=$("#c7").html();
+      var pri=$("#pri7").html();
+      var cnt=$("#count7").val();
+      items.push({item:it,
+                price:pri,
+                count:cnt
+                });
+     
+    });
+
+
+$("#add1").click(function(){
+  var n=parseInt($("#count1").val());
+  var num=1;
+  var total=n+num;
+  $("#count1").val(total);
+  var pritotal=total*9999;
+  $("#pri1").text(pritotal);
+   
+});
+
+
+
+$("#minus1").click(function(){
+  var n=parseInt($("#count1").val());
+  var num=1;
+  if(n<=1){
+    $("#count1").val(1);
+    $("#pri1").text("9999");
+  }
+   else{
+  var total=n-num;
+  $("#count1").val(total);
+  var pr=parseInt($("#pri1").text());
+  var pritotal=pr-9999;
+  $("#pri1").text(pritotal);
+   }
+ 
+});
+
+
+
+
+
+$("#add2").click(function(){
+  var n=parseInt($("#count2").val());
+  var num=1;
+  var total=n+num;
+  $("#count2").val(total);
+  var pritotal=total*17999;
+  $("#pri2").text(pritotal);
+   
+});
+
+
+
+$("#minus2").click(function(){
+  var n=parseInt($("#count2").val());
+  var num=1;
+  if(n<=1){
+    $("#count2").val(1);
+    $("#pri2").text("17999");
+  }
+   else{
+  var total=n-num;
+  $("#count2").val(total);
+  var pr=parseInt($("#pri2").text());
+  var pritotal=pr-17999;
+  $("#pri2").text(pritotal);
+   }
+ 
+});
+
+
+
+
+$("#add3").click(function(){
+  var n=parseInt($("#count3").val());
+  var num=1;
+  var total=n+num;
+  $("#count3").val(total);
+  var pritotal=total*12999;
+  $("#pri3").text(pritotal);
+   
+});
+
+
+
+$("#minus3").click(function(){
+  var n=parseInt($("#count3").val());
+  var num=1;
+  if(n<=1){
+    $("#count3").val(1);
+    $("#pri3").text("12999");
+  }
+   else{
+  var total=n-num;
+  $("#count3").val(total);
+  var pr=parseInt($("#pri3").text());
+  var pritotal=pr-12999;
+  $("#pri3").text(pritotal);
+   }
+ 
+});
+
+
+
+$("#add4").click(function(){
+  var n=parseInt($("#count4").val());
+  var num=1;
+  var total=n+num;
+  $("#count4").val(total);
+  var pritotal=total*2800;
+  $("#pri4").text(pritotal);
+   
+});
+
+
+
+$("#minus4").click(function(){
+  var n=parseInt($("#count4").val());
+  var num=1;
+  if(n<=1){
+    $("#count4").val(1);
+    $("#pri4").text("2800");
+  }
+   else{
+  var total=n-num;
+  $("#count4").val(total);
+  var pr=parseInt($("#pri4").text());
+  var pritotal=pr-2800;
+  $("#pri4").text(pritotal);
+   }
+ 
+});
+
+
+
+
+$("#add5").click(function(){
+  var n=parseInt($("#count5").val());
+  var num=1;
+  var total=n+num;
+  $("#count5").val(total);
+  var pritotal=total*3000;
+  $("#pri5").text(pritotal);
+   
+});
+
+
+
+$("#minus5").click(function(){
+  var n=parseInt($("#count5").val());
+  var num=1;
+  if(n<=1){
+    $("#count5").val(1);
+    $("#pri5").text("3000");
+  }
+   else{
+  var total=n-num;
+  $("#count5").val(total);
+  var pr=parseInt($("#pri5").text());
+  var pritotal=pr-3000;
+  $("#pri5").text(pritotal);
+   }
+ 
+});
+
+
+
+$("#add6").click(function(){
+  var n=parseInt($("#count6").val());
+  var num=1;
+  var total=n+num;
+  $("#count6").val(total);
+  var pritotal=total*24620;
+  $("#pri6").text(pritotal);
+   
+});
+
+
+
+$("#minus6").click(function(){
+  var n=parseInt($("#count6").val());
+  var num=1;
+  if(n<=1){
+    $("#count6").val(1);
+    $("#pri6").text("24620");
+  }
+   else{
+  var total=n-num;
+  $("#count6").val(total);
+  var pr=parseInt($("#pri6").text());
+  var pritotal=pr-24620;
+  $("#pri6").text(pritotal);
+   }
+ 
+});
+
+
+
+$("#add7").click(function(){
+  var n=parseInt($("#count7").val());
+  var num=1;
+  var total=n+num;
+  $("#count7").val(total);
+  var pritotal=total*82999;
+  $("#pri7").text(pritotal);
+   
+});
+
+
+
+$("#minus7").click(function(){
+  var n=parseInt($("#count7").val());
+  var num=1;
+  if(n<=1){
+    $("#count7").val(1);
+    $("#pri7").text("82999");
+  }
+   else{
+  var total=n-num;
+  $("#count7").val(total);
+  var pr=parseInt($("#pri7").text());
+  var pritotal=pr-82999;
+  $("#pri7").text(pritotal);
+   }
+ 
+});
+
+
+    $("#shwitem").click(function(){
+      var opttable=$("#table");
+      var opttable2=$("#table2");
+      var sum=0;
+      var int;
+           $.each(items, function (index,object){
+            var $contain=$('<tr>');
+              var $para1=$('<td>').text(object.item);
+                var $count=$('<td>').text(object.count);
+               var $para2=$('<td>').text(object.price);
+              $contain.append($para1,$count,$para2);
+              opttable.append($contain);
+
+int=parseInt(object.price);
+sum +=int;
+             
+                });
+
+                var $contain2=$('<tr>');
+              var $para3=$('<td>').text("TOTAL PRICE");
+                var $para4=$('<td>').text(sum);              
+                  $contain2.append($para3,$para4);
+                  opttable2.append($contain2);
+                  $para4.css({
+                    'padding-left':'100%',
+                    'text-align': 'right'
+                  });
+    });
+
+  });
+
+
+
+
+</script>
+    
+</body>
+</html>
